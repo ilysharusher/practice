@@ -1,1 +1,1 @@
-https://ilysharusher.github.io
+https://ilysharusher.github.io/practice/
