@@ -58,9 +58,11 @@
 }
 
 .bg-image {
-  background-image: url("../images/bg.png");
+  /*background-image: url("../images/bg.png");*/
+  max-height: 850px;
   background-size: cover;
   background-position: center;
+  background-color: #b6ff92;
 }
 
 /*! tailwindcss v3.3.1 | MIT License | https://tailwindcss.com*/

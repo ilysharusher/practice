@@ -15,6 +15,7 @@
 }
 
 .bg-image {
-    background-image: url("../images/bg.png");
-    @apply bg-cover bg-center;
+    /*background-image: url("../images/bg.png");*/
+    @apply bg-cover bg-center max-h-[850px];
+    background-color: #b6ff92;
 }
