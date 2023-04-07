@@ -47,6 +47,7 @@
 }
 
 .search {
+  width: 50%;
   align-self: flex-end;
   border-bottom-width: 1px;
   --tw-border-opacity: 1;
@@ -595,6 +596,10 @@ video {
 
 .mb-12 {
   margin-bottom: 3rem;
+}
+
+.-mr-2 {
+  margin-right: -0.5rem;
 }
 
 .flex {
