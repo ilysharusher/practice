@@ -6,6 +6,10 @@
     @apply container pt-5 flex justify-between max-h-[113px];
 }
 
+#nav > li {
+    @apply mx-2 text-lg;
+}
+
 .search {
     @apply self-end outline-none bg-inherit border-b border-[#324950];
 }
@@ -15,7 +19,7 @@
 }
 
 .bg-image {
-    background-image: url("bg.png");
+    background-image: url("../../src/images/bg.png");
     @apply bg-cover bg-center h-[850px];
 }
 
