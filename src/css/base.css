@@ -3,7 +3,7 @@
 }*/
 
 .header {
-    @apply container mt-5 flex justify-between max-h-[113px];
+    @apply container pt-5 flex justify-between max-h-[113px];
 }
 
 .search {
@@ -15,7 +15,11 @@
 }
 
 .bg-image {
-    /*background-image: url("../images/bg.png");*/
-    @apply bg-cover bg-center max-h-[850px];
-    background-color: #b6ff92;
+    background-image: url("bg.png");
+    @apply bg-cover bg-center h-[850px];
+}
+
+.title-h1 {
+    color: #735440;
+    @apply text-5xl;
 }
