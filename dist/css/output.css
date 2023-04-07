@@ -39,7 +39,12 @@
   padding-top: 1.25rem;
 }
 
-#nav > li {
+.nav {
+  margin-right: -0.5rem;
+  display: flex;
+}
+
+.nav > li {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   font-size: 1.125rem;
@@ -76,6 +81,11 @@
   color: #735440;
   font-size: 3rem;
   line-height: 1;
+}
+
+.sorts {
+  display: flex;
+  justify-content: center;
 }
 
 /*! tailwindcss v3.3.1 | MIT License | https://tailwindcss.com*/
@@ -596,10 +606,6 @@ video {
 
 .mb-12 {
   margin-bottom: 3rem;
-}
-
-.-mr-2 {
-  margin-right: -0.5rem;
 }
 
 .flex {

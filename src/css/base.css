@@ -6,7 +6,11 @@
     @apply container pt-5 flex justify-between max-h-[113px];
 }
 
-#nav > li {
+.nav {
+    @apply flex -mr-2;
+}
+
+.nav > li {
     @apply mx-2 text-lg;
 }
 
@@ -26,4 +30,8 @@
 .title-h1 {
     color: #735440;
     @apply text-5xl;
+}
+
+.sorts {
+    @apply flex justify-center;
 }
