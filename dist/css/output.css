@@ -1,6 +1,69 @@
-/*
-! tailwindcss v3.3.1 | MIT License | https://tailwindcss.com
-*/
+/*body {
+    font-family: 'Roboto Slab', serif;
+}*/
+
+.header {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 640px) {
+  .header {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1127px) {
+  .header {
+    max-width: 1127px;
+  }
+}
+
+.header {
+  margin-top: 1.25rem;
+  display: flex;
+  max-height: 113px;
+  justify-content: space-between;
+}
+
+.search {
+  align-self: flex-end;
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(50 73 80 / var(--tw-border-opacity));
+  background-color: inherit;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.search::-moz-placeholder {
+  color: #324950;
+}
+
+.search::placeholder {
+  color: #324950;
+}
+
+.bg-image {
+  background-image: url("../images/bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/*! tailwindcss v3.3.1 | MIT License | https://tailwindcss.com*/
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -514,4 +577,21 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
 }

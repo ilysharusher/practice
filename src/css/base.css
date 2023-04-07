@@ -1,0 +1,20 @@
+/*body {
+    font-family: 'Roboto Slab', serif;
+}*/
+
+.header {
+    @apply container mt-5 flex justify-between max-h-[113px];
+}
+
+.search {
+    @apply self-end outline-none bg-inherit border-b border-[#324950];
+}
+
+.search::placeholder {
+    color: #324950;
+}
+
+.bg-image {
+    background-image: url("../images/bg.png");
+    @apply bg-cover bg-center;
+}
