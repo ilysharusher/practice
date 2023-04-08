@@ -59,7 +59,7 @@
 }
 
 .main-element {
-    @apply container flex pt-10 justify-start;
+    @apply container flex pt-10;
 }
 
 .description {
@@ -75,9 +75,34 @@
 }
 
 .main-activities {
-    @apply bg-gray-200 pt-5 text-center;
+    @apply bg-gray-200 pt-20 pb-20 text-center ;
 }
 
 .activity {
     @apply w-1/3 justify-center mx-3;
+}
+
+.activity-title {
+    @apply text-green-700 text-2xl;
+}
+
+.activity-description {
+    @apply text-lg;
+}
+
+.hr {
+    @apply w-[50%] h-[1px] bg-green-700 mx-auto mt-5 mb-5;
+}
+
+/*
+.links {
+    @apply ;
+}*/
+
+.links > li {
+    @apply mx-2 text-base text-white mt-5 mb-5;
+}
+
+.social > img {
+    @apply mx-2;
 }
