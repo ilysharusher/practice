@@ -58,7 +58,7 @@ body {
 .h2 {
     color: #324950;
     font-size: 64px;
-    @apply font-bold;
+    @apply font-bold mb-10;
 }
 
 .main {
