@@ -1,6 +1,6 @@
-/*body {
+body {
     font-family: 'Roboto Slab', serif;
-}*/
+}
 
 .header {
     @apply container pt-5 flex justify-between max-h-[113px];
@@ -10,7 +10,14 @@
     @apply flex -mr-2;
 }
 
+.button {
+    font-family: 'Roboto', serif;
+    @apply bg-green-500 hover:bg-green-900 text-white font-medium py-2 px-4 rounded;
+}
+
 .nav > li {
+    font-family: 'Heebo', sans-serif;
+    color: #324950;
     @apply mx-2 text-lg;
 }
 
@@ -29,7 +36,7 @@
 
 .title-h1 {
     color: #735440;
-    @apply text-5xl;
+    @apply text-5xl font-bold;
 }
 
 .sorts {
@@ -51,11 +58,16 @@
 .h2 {
     color: #324950;
     font-size: 64px;
+    @apply font-bold;
 }
 
 .main {
+    @apply bg-gray-100;
+}
+
+.union {
     background-image: url("../../src/images/Union.svg");
-    @apply bg-gray-100 bg-no-repeat pt-5 bg-cover bg-center;
+    @apply bg-cover bg-center bg-no-repeat;
 }
 
 .main-element {
@@ -75,7 +87,7 @@
 }
 
 .main-activities {
-    @apply bg-gray-200 pt-20 pb-20 text-center ;
+    @apply bg-gray-200 pt-20 pb-20 text-center justify-center align-top;
 }
 
 .activity {
@@ -83,7 +95,7 @@
 }
 
 .activity-title {
-    @apply text-green-700 text-2xl;
+    @apply text-green-700 text-2xl font-bold;
 }
 
 .activity-description {
@@ -94,15 +106,14 @@
     @apply w-[50%] h-[1px] bg-green-700 mx-auto mt-5 mb-5;
 }
 
-/*
-.links {
-    @apply ;
-}*/
-
 .links > li {
     @apply mx-2 text-base text-white mt-5 mb-5;
 }
 
 .social > img {
     @apply mx-2;
+}
+footer {
+    font-family: 'Roboto', serif;
+    @apply font-normal;
 }

@@ -1,6 +1,6 @@
-/*body {
-    font-family: 'Roboto Slab', serif;
-}*/
+body {
+  font-family: 'Roboto Slab', serif;
+}
 
 .header {
   width: 100%;
@@ -44,7 +44,28 @@
   display: flex;
 }
 
+.button {
+  font-family: 'Roboto', serif;
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.button:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(20 83 45 / var(--tw-bg-opacity));
+}
+
 .nav > li {
+  font-family: 'Heebo', sans-serif;
+  color: #324950;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   font-size: 1.125rem;
@@ -81,6 +102,7 @@
   color: #735440;
   font-size: 3rem;
   line-height: 1;
+  font-weight: 700;
 }
 
 .sorts {
@@ -109,16 +131,19 @@
 .h2 {
   color: #324950;
   font-size: 64px;
+  font-weight: 700;
 }
 
 .main {
-  background-image: url("../../src/images/Union.svg");
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.union {
+  background-image: url("../../src/images/Union.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-top: 1.25rem;
 }
 
 .main-element {
@@ -170,11 +195,13 @@
 }
 
 .main-activities {
+  justify-content: center;
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
   padding-top: 5rem;
   padding-bottom: 5rem;
   text-align: center;
+  vertical-align: top;
 }
 
 .activity {
@@ -187,6 +214,7 @@
 .activity-title {
   font-size: 1.5rem;
   line-height: 2rem;
+  font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(21 128 61 / var(--tw-text-opacity));
 }
@@ -207,11 +235,6 @@
   background-color: rgb(21 128 61 / var(--tw-bg-opacity));
 }
 
-/*
-.links {
-    @apply ;
-}*/
-
 .links > li {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -228,7 +251,14 @@
   margin-right: 0.5rem;
 }
 
-/*! tailwindcss v3.3.1 | MIT License | https://tailwindcss.com*/
+footer {
+  font-family: 'Roboto', serif;
+  font-weight: 400;
+}
+
+/*
+! tailwindcss v3.3.1 | MIT License | https://tailwindcss.com
+*/
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -806,10 +836,6 @@ video {
   justify-content: space-between;
 }
 
-.rounded {
-  border-radius: 0.25rem;
-}
-
 .bg-\[\#2D3F45\] {
   --tw-bg-opacity: 1;
   background-color: rgb(45 63 69 / var(--tw-bg-opacity));
@@ -820,19 +846,8 @@ video {
   background-color: rgb(50 73 80 / var(--tw-bg-opacity));
 }
 
-.bg-green-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+.pb-3 {
+  padding-bottom: 0.75rem;
 }
 
 .pl-3 {
@@ -843,20 +858,20 @@ video {
   padding-right: 0.75rem;
 }
 
+.pt-3 {
+  padding-top: 0.75rem;
+}
+
 .text-center {
   text-align: center;
 }
 
-.font-medium {
-  font-weight: 500;
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
-.text-white {
+.text-\[\#B9B9B9\] {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.hover\:bg-green-900:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(20 83 45 / var(--tw-bg-opacity));
+  color: rgb(185 185 185 / var(--tw-text-opacity));
 }
