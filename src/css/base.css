@@ -6,10 +6,6 @@ body {
     @apply container pt-5 flex justify-between max-h-[113px];
 }
 
-.nav {
-    @apply flex -mr-2;
-}
-
 .button {
     font-family: 'Roboto', serif;
     @apply bg-green-500 hover:bg-green-900 text-white font-medium py-2 px-4 rounded;
@@ -61,10 +57,6 @@ body {
     @apply font-bold mb-10;
 }
 
-.main {
-    @apply bg-gray-100;
-}
-
 .union {
     background-image: url("../../src/images/Union.svg");
     @apply bg-cover bg-center bg-no-repeat;
@@ -72,18 +64,6 @@ body {
 
 .main-element {
     @apply container flex pt-10;
-}
-
-.description {
-    @apply w-1/2;
-}
-
-.photo {
-    @apply w-1/2;
-}
-
-.h2-description {
-    @apply text-xl;
 }
 
 .main-activities {
@@ -98,10 +78,6 @@ body {
     @apply text-green-700 text-2xl font-bold;
 }
 
-.activity-description {
-    @apply text-lg;
-}
-
 .hr {
     @apply w-[50%] h-[1px] bg-green-700 mx-auto mt-5 mb-5;
 }
@@ -113,6 +89,7 @@ body {
 .social > img {
     @apply mx-2;
 }
+
 footer {
     font-family: 'Roboto', serif;
     @apply font-normal;

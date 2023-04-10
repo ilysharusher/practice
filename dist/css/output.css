@@ -39,11 +39,6 @@ body {
   padding-top: 1.25rem;
 }
 
-.nav {
-  margin-right: -0.5rem;
-  display: flex;
-}
-
 .button {
   font-family: 'Roboto', serif;
   border-radius: 0.25rem;
@@ -135,11 +130,6 @@ body {
   font-weight: 700;
 }
 
-.main {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
-
 .union {
   background-image: url("../../src/images/Union.svg");
   background-size: cover;
@@ -182,19 +172,6 @@ body {
   padding-top: 2.5rem;
 }
 
-.description {
-  width: 50%;
-}
-
-.photo {
-  width: 50%;
-}
-
-.h2-description {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .main-activities {
   justify-content: center;
   --tw-bg-opacity: 1;
@@ -218,11 +195,6 @@ body {
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(21 128 61 / var(--tw-text-opacity));
-}
-
-.activity-description {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 
 .hr {
@@ -805,6 +777,10 @@ video {
   }
 }
 
+.-mr-2 {
+  margin-right: -0.5rem;
+}
+
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -815,6 +791,10 @@ video {
 
 .h-\[600px\] {
   height: 600px;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .flex-col {
@@ -847,6 +827,11 @@ video {
   background-color: rgb(50 73 80 / var(--tw-bg-opacity));
 }
 
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
 .pb-3 {
   padding-bottom: 0.75rem;
 }
@@ -867,9 +852,19 @@ video {
   text-align: center;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .text-\[\#B9B9B9\] {
