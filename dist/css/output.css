@@ -962,6 +962,10 @@ video {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
+.pb-14 {
+  padding-bottom: 3.5rem;
+}
+
 .pb-3 {
   padding-bottom: 0.75rem;
 }
@@ -980,10 +984,6 @@ video {
 
 .pt-3 {
   padding-top: 0.75rem;
-}
-
-.pb-14 {
-  padding-bottom: 3.5rem;
 }
 
 .text-center {
