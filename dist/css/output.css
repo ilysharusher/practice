@@ -68,8 +68,6 @@ body {
 }
 
 .search {
-  width: 50%;
-  align-self: flex-end;
   border-bottom-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(50 73 80 / var(--tw-border-opacity));
@@ -797,6 +795,10 @@ video {
   width: 50%;
 }
 
+.w-\[18px\] {
+  width: 18px;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -815,6 +817,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.self-end {
+  align-self: flex-end;
 }
 
 .bg-\[\#2D3F45\] {
