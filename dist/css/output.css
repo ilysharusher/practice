@@ -68,6 +68,7 @@ body {
 }
 
 .search {
+  align-self: flex-end;
   border-bottom-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(50 73 80 / var(--tw-border-opacity));

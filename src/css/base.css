@@ -18,7 +18,7 @@ body {
 }
 
 .search {
-    @apply outline-none bg-inherit border-b border-[#324950];
+    @apply self-end outline-none bg-inherit border-b border-[#324950];
 }
 
 .search::placeholder {
