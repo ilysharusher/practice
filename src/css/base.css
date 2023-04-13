@@ -135,6 +135,10 @@ footer {
     @apply w-1/3  mx-8 mt-5 mb-5;
 }
 
+.input-base {
+    @apply border-[#DADADA] h-[55px] border rounded-xl outline-none px-2.5;
+}
+
 .red-vertical-line {
     @apply border-l-4 border-red-500 pl-4;
 }

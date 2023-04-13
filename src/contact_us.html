@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <title>Contact us</title>
+    <link href="../dist/css/output.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="shadow-2xl h-[150px]">
+        <header class="header">
+            <a href="../src/index.html"><img src="images/logo.png" alt="logo"></a>
+            <div class="flex flex-col justify-between">
+                <div class="flex justify-between items-center self-end">
+                    <input type="text" class="search" placeholder="Search"/>
+                    <div class="w-[18px]">
+                        <a href="#"><img src="images/ico_search.svg" alt="search_icon"></a>
+                    </div>
+                </div>
+                <nav>
+                    <ul class="flex -mr-2 nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Company Profile</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">R & D</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <div>
+        <img src="images/mountains.png" alt="mountains">
+    </div>
+    <div class="pt-16 bg-[#F7F7F7] pb-10">
+        <main class="container text-[#324950]">
+            <h1 class="text-4xl font-bold">Contact us</h1>
+            <div class="mt-8 mb-8 text-[#57984C] text-2xl">*****</div>
+            <div>
+                <form class="flex space-x-[125px]">
+                    <div class="basis-[350px] space-y-5">
+                        <div class="flex flex-col space-y-2.5">
+                            <label class="text-17" for="name">Name *</label>
+                            <input class="input-base"
+                                   id="name" type="text">
+                        </div>
+                        <div class="flex flex-col space-y-2.5">
+                            <label class="text-17" for="company_name">Company Name</label>
+                            <input class="input-base"
+                                   id="company_name" type="text">
+                        </div>
+                        <div class="flex flex-col space-y-2.5">
+                            <label class="text-17" for="position">Position</label>
+                            <input class="input-base"
+                                   id="position" type="text">
+                        </div>
+                        <div class="flex flex-col space-y-2.5">
+                            <label class="text-17" for="city">City</label>
+                            <input class="input-base"
+                                   id="city" type="text">
+                        </div>
+                        <div class="flex flex-col space-y-2.5">
+                            <label class="text-17" for="country">Country</label>
+                            <input class="input-base"
+                                   id="country" type="text">
+                        </div>
+                        <div class="flex flex-col space-y-2.5">
+                            <label class="text-17" for="telephone">Telephone</label>
+                            <input class="input-base"
+                                   id="telephone" type="tel">
+                        </div>
+                        <div class="flex flex-col space-y-2.5">
+                            <label class="text-17" for="email">Email *</label>
+                            <input class="input-base"
+                                   id="email" type="email">
+                        </div>
+
+                    </div>
+                    <div class="space-y-5 grow">
+                        <div class="flex flex-col space-y-2.5">
+                            <label class="text-17" for="occupation">You are a</label>
+                            <select class="input-base"
+                                    id="occupation" name="occupation">
+                                <option disabled="" selected="" value="0">Select something</option>
+                                <option value="3">Seed producer</option>
+                                <option value="1">Singer</option>
+                                <option value="2">Programmer</option>
+                            </select>
+                        </div>
+                        <div class="flex flex-col space-y-2.5">
+                            <label class="text-17" for="occupation_other">If other, please specify</label>
+                            <input class="input-base"
+                                   id="occupation_other" type="text">
+                        </div>
+                        <div class="flex flex-col space-y-2.5">
+                            <label class="text-17" for="interest_in">You are interested in</label>
+                            <textarea class="border-[#DADADA] h-[390px] border rounded-xl outline-none p-2.5"
+                                      id="interest_in"></textarea>
+                        </div>
+                        <div class="flex flex-col space-y-2.5 text-17">
+                            <label for="captcha">Please type this code</label>
+                            <div class="flex items-center justify-between">
+                                <img alt="captcha" class="w-[100px] h-[27px]" src="images/image 12.png">
+                                <input class="input-base"
+                                       id="captcha" type="text">
+                                <button class="text-white bg-[#57984C] rounded-full px-[70px] py-2.5" type="submit">
+                                    Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+    <div class="container mt-10 mb-10 text-center text-[#324950]">
+        <p class="text-[#57984C] text-2xl font-bold">Our Address</p>
+        <div class="green-line mx-auto"></div>
+        <p>AGRIDERA Seeds & Agriculture Ltd.</p>
+        <p>P.O Box 103,</p>
+        <p>Gedera 70750, Israel.</p>
+        <p>Telephone: <a class="text-[#57984C]" href="#">+972 8 944 9222</a></p>
+    </div>
+    <footer>
+        <div class="bg-[#2D3F45]">
+            <div class="container flex justify-between">
+                <div>
+                    <ul class="links flex">
+                        <li><a href="#">PROFILE</a></li>
+                        <li><a href="#">MANAGEMENT</a></li>
+                        <li><a href="#">PRODUCTS</a></li>
+                        <li><a href="#">R&D</a></li>
+                        <li><a href="#">LINK</a></li>
+                        <li><a href="#">SITEMAP</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="flex social">
+                    <img src="images/linkedin.svg" alt="linkedin">
+                    <img src="images/Ico_inst.svg" alt="inst">
+                    <img src="images/youtube.svg" alt="youtube">
+                    <img src="images/twitter.svg" alt="twitter">
+                    <img src="images/facebook.svg" alt="facebook">
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#324950] text-center pt-3 pb-3">
+            <p class="text-sm text-[#B9B9B9]">AGRIDERA SEEDS & AGRICULTURE LTD. © 2020</p>
+        </div>
+    </footer>
+</body>
+</html>
