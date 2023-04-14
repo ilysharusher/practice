@@ -991,16 +991,6 @@ video {
   margin-bottom: 1.25rem;
 }
 
-.my-10{
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-}
-
-.my-8{
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 .-mr-2{
   margin-right: -0.5rem;
 }
@@ -1011,10 +1001,6 @@ video {
 
 .mb-12{
   margin-bottom: 3rem;
-}
-
-.mb-20{
-  margin-bottom: 5rem;
 }
 
 .mb-32{
@@ -1135,12 +1121,6 @@ video {
   margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-x-\[125px\] > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(125px * var(--tw-space-x-reverse));
-  margin-left: calc(125px * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .space-y-2 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1250,9 +1230,9 @@ video {
   padding-right: 30px;
 }
 
-.px-\[70px\]{
-  padding-left: 70px;
-  padding-right: 70px;
+.px-\[8\%\]{
+  padding-left: 8%;
+  padding-right: 8%;
 }
 
 .py-10{
@@ -1397,6 +1377,10 @@ video {
 }
 
 @media not all and (min-width: 1127px){
+  .max-xl\:mt-5{
+    margin-top: 1.25rem;
+  }
+
   .max-xl\:flex-col{
     flex-direction: column;
   }
@@ -1466,6 +1450,16 @@ video {
   .max-sm\:hidden{
     display: none;
   }
+
+  .max-sm\:max-w-\[50\%\]{
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 640px){
+  .sm\:hidden{
+    display: none;
+  }
 }
 
 @media (min-width: 768px){
@@ -1503,5 +1497,11 @@ video {
 
   .xl\:w-1\/2{
     width: 50%;
+  }
+
+  .xl\:space-x-\[125px\] > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(125px * var(--tw-space-x-reverse));
+    margin-left: calc(125px * calc(1 - var(--tw-space-x-reverse)));
   }
 }
