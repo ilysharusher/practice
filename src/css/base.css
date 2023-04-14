@@ -120,7 +120,7 @@ footer {
 }
 
 .white-tomatoes {
-    @apply bg-white flex justify-center;
+    @apply bg-white flex justify-center max-md:flex-col;
 }
 
 .white-title {
@@ -132,7 +132,7 @@ footer {
 }
 
 .white-card {
-    @apply w-1/3  mx-8 mt-5 mb-5;
+    @apply md:w-1/3 mx-8 my-5;
 }
 
 .input-base {
@@ -144,11 +144,10 @@ footer {
 }
 
 .many-tomatoes {
-    @apply flex justify-start flex-wrap text-center;
+    @apply grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 text-center;
 }
 
 .tomato {
-    width: calc(100% / 3 - 24px);
     @apply bg-white pb-3 mx-3 my-3;
 }
 
