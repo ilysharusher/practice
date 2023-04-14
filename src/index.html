@@ -3,6 +3,7 @@
 <head>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Homepage</title>
     <link href="../dist/css/output.css" type="text/css" rel="stylesheet">
@@ -10,15 +11,15 @@
 <body>
     <div class="bg-image">
         <header class="header">
-            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <a href="index.html"><img class="max-lg:max-h-[80px]" src="images/logo.png" alt="logo"></a>
             <div class="flex flex-col justify-between">
-                <div class="flex justify-between items-center self-end">
+                <div class="flex justify-between items-center self-end max-sm:hidden">
                     <input type="text" class="search" placeholder="Search"/>
                     <div class="w-[18px]">
                         <a href="#"><img src="images/ico_search.svg" alt="search_icon"></a>
                     </div>
                 </div>
-                <nav>
+                <nav class="max-lg:hidden">
                     <ul class="flex -mr-2 nav">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="#">Company Profile</a></li>
@@ -29,8 +30,11 @@
                     </ul>
                 </nav>
             </div>
+            <div class="lg:hidden w-10">
+                <img src="images/phone-menu.png" alt="phone-menu">
+            </div>
         </header>
-        <div class="flex items-center justify-center h-[600px] flex-col">
+        <div class="flex items-center justify-center text-center h-[600px] flex-col">
             <h1 class="title-h1 mb-12">Agridera Seeds and Agriculture Ltd</h1>
             <button class="button">
                 READ MORE
@@ -68,26 +72,26 @@
         </div>
     </div>
     <main class="bg-gray-100">
-        <div class="union">
-            <div class="main-element">
-                <div class="w-1/2">
-                    <h2 class="h2">Vision</h2>
-                    <p class="text-xl">We believe in long-term growth with an emphasis on the potential of
+        <div class="union px-10 py-10">
+            <div class="main-element max-md:flex max-md:flex-col">
+                <div class="md:w-1/2">
+                    <h2 class="h2 max-md:text-4xl">Vision</h2>
+                    <p class="text-xl max-md:text-lg">We believe in long-term growth with an emphasis on the potential of
                         emerging
                         markets. We also support
                         the global need of feeding the growing population.</p>
                 </div>
-                <div class="w-1/2">
+                <div class="md:w-1/2">
                     <img src="images/Vision.png" alt="Vision">
                 </div>
             </div>
-            <div class="main-element">
-                <div class="w-1/2">
+            <div class="main-element max-md:flex max-md:flex-col">
+                <div class="md:w-1/2">
                     <img src="images/Mission.png" alt="Mission">
                 </div>
-                <div class="w-1/2">
-                    <h2 class="h2">Mission</h2>
-                    <p class="text-xl">Breeding and marketing seeds for advanced field crops and vegetable
+                <div class="md:w-1/2">
+                    <h2 class="h2 max-md:text-4xl">Mission</h2>
+                    <p class="text-xl max-md:text-lg">Breeding and marketing seeds for advanced field crops and vegetable
                         varieties
                         that provide an added value to all supply chain partners.</p>
                 </div>
@@ -95,8 +99,8 @@
         </div>
     </main>
     <div class="main-activities">
-        <h2 class="h2">Agridera’s main activities</h2>
-        <div class="container flex pr-3 pl-3 justify-center items-end">
+        <h2 class="h2 max-md:text-4xl">Agridera’s main activities</h2>
+        <div class="container flex pr-3 pl-3 justify-center items-end max-md:flex-col max-md:items-center">
             <div class="activity">
                 <img src="images/image 1.png" alt="image 1">
                 <p class="activity-title">Open field crop seeds</p>
@@ -118,10 +122,10 @@
         </div>
     </div>
     <footer>
-        <div class="bg-[#2D3F45]">
-            <div class="container flex justify-between">
+        <div class="bg-[#2D3F45] px-10 py-5">
+            <div class="container flex justify-between items-center max-lg:flex-col gap-3">
                 <div>
-                    <ul class="links flex">
+                    <ul class="links flex max-lg:flex-wrap justify-center">
                         <li><a href="#">PROFILE</a></li>
                         <li><a href="#">MANAGEMENT</a></li>
                         <li><a href="#">PRODUCTS</a></li>

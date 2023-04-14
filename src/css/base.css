@@ -5,7 +5,7 @@ body {
 }
 
 .header {
-    @apply container pt-5 flex justify-between max-h-[113px];
+    @apply lg:container pt-5 pb-3 flex justify-between max-h-[113px] max-lg:bg-white max-lg:items-center max-lg:px-10 max-lg:drop-shadow-lg;
 }
 
 .button {
@@ -31,16 +31,16 @@ body {
     @apply bg-cover bg-center h-[850px];
 }
 
-.title-h1 {
+.h2 {
     @apply text-5xl font-bold text-[#735440];
 }
 
 .sorts {
-    @apply flex justify-center pt-10 pb-10;
+    @apply grid grid-cols-2 justify-center pt-10 pb-10  xl:grid-cols-7 lg:grid-cols-4 md:grid-cols-3;
 }
 
 .sort {
-    @apply flex flex-col mx-10;
+    @apply flex flex-col mx-10 my-10;
 }
 
 .sort > p {
@@ -95,7 +95,7 @@ body {
 }
 
 .links > li {
-    @apply mx-2 text-base text-white mt-5 mb-5;
+    @apply mx-2 text-base text-white;
 }
 
 .social > img {
