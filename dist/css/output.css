@@ -120,6 +120,13 @@ body {
   color: rgb(115 84 64 / var(--tw-text-opacity));
 }
 
+@media not all and (min-width: 768px){
+  .title-h1{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
 .sorts{
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1375,6 +1382,10 @@ video {
 @media not all and (min-width: 768px){
   .max-md\:flex{
     display: flex;
+  }
+
+  .max-md\:w-1\/2{
+    width: 50%;
   }
 
   .max-md\:flex-col{
