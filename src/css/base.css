@@ -162,3 +162,7 @@ footer {
 .tomato > p {
     @apply text-green-600 text-17;
 }
+
+.potato-h1 {
+    @apply text-54 font-bold;
+}

@@ -9,17 +9,17 @@
     <link href="../dist/css/output.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-    <div class="shadow-2xl h-[150px]">
+    <div class="shadow-2xl lg:h-[150px]">
         <header class="header">
-            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <a href="index.html"><img class="max-lg:max-h-[80px]" src="images/logo.png" alt="logo"></a>
             <div class="flex flex-col justify-between">
-                <div class="flex justify-between items-center self-end">
+                <div class="flex justify-between items-center self-end max-sm:hidden">
                     <input type="text" class="search" placeholder="Search"/>
                     <div class="w-[18px]">
                         <a href="#"><img src="images/ico_search.svg" alt="search_icon"></a>
                     </div>
                 </div>
-                <nav>
+                <nav class="max-lg:hidden">
                     <ul class="flex -mr-2 nav">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="#">Company Profile</a></li>
@@ -30,34 +30,37 @@
                     </ul>
                 </nav>
             </div>
+            <div class="lg:hidden w-10">
+                <img src="images/phone-menu.png" alt="phone-menu">
+            </div>
         </header>
     </div>
-    <div class="mb-32">
+    <div class="mb-32 mx-10">
         <div class="union-tomato">
             <div class="container mt-5">
                 <div class="flex mb-5">
                     <img src="images/Arrow 1.svg" alt="arrow">
                     <p class="text-sm text-green-600 ml-3">Return to all tomatoes</p>
                 </div>
-                <div class="flex justify-between">
-                    <div class="w-1/2">
+                <div class="flex justify-between max-lg:flex-col gap-5">
+                    <div class="xl:w-1/2">
                         <div>
-                            <h1 class="text-54 text-[#324950] font-bold">TAG 1002 (TAG 809)</h1>
-                            <h2 class="text-54 text-[#57984C] font-bold">Tomato Determinate Red Standard Round</h2>
+                            <h1 class="potato-h1 max-xl:text-5xl max-md:text-4xl text-[#324950]">TAG 1002 (TAG 809)</h1>
+                            <h2 class="potato-h1 max-xl:text-5xl max-md:text-4xl text-[#57984C]">Tomato Determinate Red Standard Round</h2>
                             <div class="mt-8 mb-8 text-[#57984C] text-[20px]">*****</div>
-                            <div class="flex">
+                            <div class="flex items-center">
                                 <img src="images/red-tomatoes.svg" alt="tomatoes logo! 🍅🍅🍅">
-                                <p class="text-[#CF2333] text-3xl font-bold ml-5">Very high yield and excellent fruits
+                                <p class="text-[#CF2333] text-3xl max-md:text-xl font-bold ml-5">Very high yield and excellent fruits
                                     quality!</p>
                             </div>
                         </div>
                     </div>
-                    <div class="w-1/2">
+                    <div class="xl:w-1/2">
                         <img src="images/big tomatoes.jpg" alt="tomatoes 🍅🍅🍅">
                     </div>
                 </div>
-                <div class="flex justify-between items-end -mt-8">
-                    <div class="w-1/2">
+                <div class="flex justify-between lg:items-end xl:-mt-8 max-lg:flex-col max-lg:mt-5">
+                    <div class="lg:w-1/2">
                         <p class="potatoes-title">CHARACTERISTICS</p>
                         <div class="green-line"></div>
                         <p class="text-[#324950] text-17"><b>Resistance</b><br>
@@ -65,7 +68,7 @@
                             IR: TYLCV
                         </p>
                     </div>
-                    <div>
+                    <div class="max-lg:mt-5">
                         <a class="mr-6 text-[#57984C] space-x-5 py-2.5 px-[30px] border-[#57984C] border-2 flex items-center rounded-[60px]"
                            href="#">
                             <img src="images/ico_pdf.svg" alt="pdf">
@@ -73,8 +76,8 @@
                         </a>
                     </div>
                 </div>
-                <div class="flex mt-8">
-                    <div class="w-1/2">
+                <div class="flex mt-8 max-lg:flex-col gap-5">
+                    <div class="lg:w-1/2">
                         <p class="potatoes-title">Plant</p>
                         <div class="green-line"></div>
                         <div class="text-[#324950] text-17">
@@ -88,7 +91,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="w-1/2">
+                    <div class="lg:w-1/2">
                         <p class="potatoes-title">Cycle</p>
                         <div class="green-line"></div>
                         <div class="text-[#324950] text-17">
@@ -100,8 +103,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex mt-8">
-                    <div class="w-1/2">
+                <div class="flex mt-8 max-lg:flex-col gap-5">
+                    <div class="lg:w-1/2">
                         <p class="potatoes-title">Fruit</p>
                         <div class="green-line"></div>
                         <div class="text-[#324950] text-17">
@@ -115,7 +118,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="w-1/2">
+                    <div class="lg:w-1/2">
                         <p class="potatoes-title">Color</p>
                         <div class="green-line"></div>
                         <div class="text-[#324950] text-17">
@@ -127,10 +130,10 @@
         </div>
     </div>
     <footer>
-        <div class="bg-[#2D3F45]">
-            <div class="container flex justify-between">
+        <div class="bg-[#2D3F45] px-10 py-5">
+            <div class="container flex justify-between items-center max-lg:flex-col gap-3">
                 <div>
-                    <ul class="links flex">
+                    <ul class="links flex max-lg:flex-wrap justify-center">
                         <li><a href="#">PROFILE</a></li>
                         <li><a href="#">MANAGEMENT</a></li>
                         <li><a href="#">PRODUCTS</a></li>
