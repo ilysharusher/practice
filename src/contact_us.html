@@ -9,17 +9,17 @@
     <link href="../dist/css/output.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-    <div class="shadow-2xl h-[150px]">
+    <div class="shadow-2xl lg:h-[150px]">
         <header class="header">
-            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <a href="index.html"><img class="max-lg:max-h-[80px]" src="images/logo.png" alt="logo"></a>
             <div class="flex flex-col justify-between">
-                <div class="flex justify-between items-center self-end">
+                <div class="flex justify-between items-center self-end max-sm:hidden">
                     <input type="text" class="search" placeholder="Search"/>
                     <div class="w-[18px]">
                         <a href="#"><img src="images/ico_search.svg" alt="search_icon"></a>
                     </div>
                 </div>
-                <nav>
+                <nav class="max-lg:hidden">
                     <ul class="flex -mr-2 nav">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="#">Company Profile</a></li>
@@ -29,6 +29,9 @@
                         <li><a href="contact_us.html">Contact</a></li>
                     </ul>
                 </nav>
+            </div>
+            <div class="lg:hidden w-10">
+                <img src="images/phone-menu.png" alt="phone-menu">
             </div>
         </header>
     </div>
@@ -40,7 +43,7 @@
             <h1 class="text-4xl font-bold">Contact us</h1>
             <div class="mt-8 mb-8 text-[#57984C] text-2xl">*****</div>
             <div>
-                <form class="flex space-x-[125px]">
+                <form class="flex space-x-[125px] max-xl:flex-col" method="post" action="#">
                     <div class="basis-[350px] space-y-5">
                         <div class="flex flex-col space-y-2.5">
                             <label class="text-17" for="name">Name *</label>
@@ -124,10 +127,10 @@
         <p>Telephone: <a class="text-[#57984C]" href="#">+972 8 944 9222</a></p>
     </div>
     <footer>
-        <div class="bg-[#2D3F45]">
-            <div class="container flex justify-between">
+        <div class="bg-[#2D3F45] px-10 py-5">
+            <div class="container flex justify-between items-center max-lg:flex-col gap-3">
                 <div>
-                    <ul class="links flex">
+                    <ul class="links flex max-lg:flex-wrap justify-center">
                         <li><a href="#">PROFILE</a></li>
                         <li><a href="#">MANAGEMENT</a></li>
                         <li><a href="#">PRODUCTS</a></li>

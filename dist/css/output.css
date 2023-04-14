@@ -173,7 +173,6 @@ body {
 
 .h2 {
   font-size: 64px;
-  margin-bottom: 2.5rem;
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(50 73 80 / var(--tw-text-opacity));
@@ -982,6 +981,26 @@ video {
   margin-right: auto;
 }
 
+.my-3{
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.my-5{
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.my-10{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.my-8{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .-mr-2{
   margin-right: -0.5rem;
 }
@@ -1040,10 +1059,6 @@ video {
 
 .flex{
   display: flex;
-}
-
-.h-\[150px\]{
-  height: 150px;
 }
 
 .h-\[27px\]{
@@ -1382,6 +1397,10 @@ video {
 }
 
 @media not all and (min-width: 1127px){
+  .max-xl\:flex-col{
+    flex-direction: column;
+  }
+
   .max-xl\:text-5xl{
     font-size: 3rem;
     line-height: 1;
