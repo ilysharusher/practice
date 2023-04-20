@@ -8,7 +8,6 @@
     <title>Tomato one</title>
     <link href="../dist/css/output.css" type="text/css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
-    <script src="js/main.js"></script>
 </head>
 <body>
     <div class="shadow-2xl lg:h-[150px]">
@@ -49,8 +48,8 @@
                 <div class="flex justify-between max-lg:flex-col gap-5">
                     <div class="xl:w-1/2">
                         <div>
-                            <h1 class="potato-h1 max-xl:text-5xl max-md:text-4xl text-[#324950]">TAG 1002 (TAG 809)</h1>
-                            <h2 class="potato-h1 max-xl:text-5xl max-md:text-4xl text-[#57984C]">Tomato Determinate Red Standard Round</h2>
+                            <h1 class="potato-h1 max-xl:text-5xl max-md:text-4xl text-[#324950]">{{ product.title }}</h1>
+                            <h2 class="potato-h1 max-xl:text-5xl max-md:text-4xl text-[#57984C]">{{ product.short_text }}</h2>
                             <div class="mt-8 mb-8 text-[#57984C] text-[20px]">*****</div>
                             <div class="flex items-center">
                                 <img src="images/red-tomatoes.svg" alt="tomatoes logo! 🍅🍅🍅">
@@ -60,7 +59,7 @@
                         </div>
                     </div>
                     <div class="xl:w-1/2">
-                        <img src="images/big tomatoes.jpg" alt="tomatoes 🍅🍅🍅">
+                        <img :src="product.image" alt="tomatoes 🍅🍅🍅">
                     </div>
                 </div>
                 <div class="flex justify-between lg:items-end xl:-mt-8 max-lg:flex-col max-lg:mt-5">
@@ -76,7 +75,7 @@
                         <a class="mr-6 text-[#57984C] space-x-5 py-2.5 px-[30px] border-[#57984C] border-2 flex items-center rounded-[60px]"
                            href="#">
                             <img src="images/ico_pdf.svg" alt="pdf">
-                            <p class="font-bold text-[17px]">Download PDF</p>
+                            <p class="font-bold text-[17px]">Add to cart</p>
                         </a>
                     </div>
                 </div>
@@ -160,5 +159,6 @@
             <p class="text-sm text-[#B9B9B9]">AGRIDERA SEEDS & AGRICULTURE LTD. © 2020</p>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

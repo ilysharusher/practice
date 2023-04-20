@@ -103,9 +103,9 @@
                 <template v-if="products">
                     <article class="many-tomatoes">
                         <section class="tomato" v-for="p in products">
-                            <a href="tomato_one.html"><img class="tomato-img" :src="p.image" alt="big buryak"></a>
-                            <h3><a href="tomato_one.html">{{ p.title }}</a></h3>
-                            <p><a href="tomato_one.html">{{ p.short_text }}</a></p>
+                            <a :href="'tomato_one.html#'+ p.id"><img class="tomato-img" :src="p.image" alt="big buryak"></a>
+                            <h3><a :href="'tomato_one.html#'+ p.id">{{ p.title }}</a></h3>
+                            <p><a :href="'tomato_one.html#'+ p.id">{{ p.short_text }}</a></p>
                         </section>
                     </article>
                 </template>
