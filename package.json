@@ -9,6 +9,11 @@
     "build:tailwind": "tailwindcss build ./src/css/input.css -o ./dist/css/output.css",
     "watch:tailwind": "tailwindcss -i ./src/css/input.css -o ./dist/css/output.css -w",
     "build": "npm run build:tailwind",
-    "dev": "npm run watch:tailwind"
+    "dev": "npm run watch:tailwind",
+    "start":  "http-server"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "jquery": "^3.6.4"
   }
 }
