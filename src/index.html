@@ -9,6 +9,15 @@
     <link href="../dist/css/output.css" type="text/css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
     <link rel="manifest" href="../manifest.json">
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker
+                .register('../sw.js')
+                .then(function () {
+                    console.log('Service worker registered!');
+                });
+        }
+    </script>
 </head>
 <body>
     <div class="bg-image">
@@ -79,7 +88,8 @@
                 <div class="md:w-1/2">
                     <h2 class="h2 max-md:text-4xl">Vision</h2>
                     <div class="my-3 text-[#57984C] text-[20px]">*****</div>
-                    <p class="text-xl max-md:text-lg">We believe in long-term growth with an emphasis on the potential of
+                    <p class="text-xl max-md:text-lg">We believe in long-term growth with an emphasis on the potential
+                        of
                         emerging
                         markets. We also support
                         the global need of feeding the growing population.</p>
@@ -95,7 +105,8 @@
                 <div class="md:w-1/2">
                     <h2 class="h2 max-md:text-4xl">Mission</h2>
                     <div class="my-3 text-[#57984C] text-[20px]">*****</div>
-                    <p class="text-xl max-md:text-lg">Breeding and marketing seeds for advanced field crops and vegetable
+                    <p class="text-xl max-md:text-lg">Breeding and marketing seeds for advanced field crops and
+                        vegetable
                         varieties
                         that provide an added value to all supply chain partners.</p>
                 </div>
