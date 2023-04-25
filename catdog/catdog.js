@@ -25,3 +25,14 @@ function getRandomDog() {
             }
         });
 }
+
+fetch('https://restcountries.com/v3.1/region/europe')
+    .then(response => response.json())
+    .then(data => {
+        data.forEach(obj => {
+            const li = document.createElement('li');
+            li.textContent = obj.capital;
+            document.getElementById('countries').appendChild(li);
+        });
+    })
+    .catch(error => console.error(error));
