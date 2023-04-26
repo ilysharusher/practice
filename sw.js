@@ -26,3 +26,27 @@ self.addEventListener('fetch', function (event) {
             })
     );
 });
+
+function subscribeForPushNotifications() {
+    Notification.requestPermission().then(function(permission) {
+        if (permission === 'granted') {
+            console.log('User has granted permission for push notifications');
+        } else {
+            console.log('User has denied permission for push notifications');
+        }
+    });
+}
+
+self.addEventListener('push', function(event) {
+    if (event.data) {
+        const notificationData = event.data.json();
+        self.registration.showNotification(notificationData.title, {
+            body: notificationData.body,
+            icon: notificationData.icon,
+            data: notificationData.link
+        });
+    } else {
+        console.log('Received push notification but no data available');
+    }
+});
+

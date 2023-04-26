@@ -11,13 +11,14 @@
     <link rel="manifest" href="../manifest.json">
     <script>
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker
-                .register('../sw.js')
-                .then(function () {
-                    console.log('Service worker registered!');
-                });
+            navigator.serviceWorker.register('../sw.js').then(function(registration) {
+                console.log('Service worker registered successfully');
+            }).catch(function(error) {
+                console.error('Failed to register service worker', error);
+            });
         }
     </script>
+
 </head>
 <body>
     <div class="bg-image">
@@ -49,6 +50,9 @@
             <h1 class="title-h1 mb-12">Agridera Seeds and Agriculture Ltd</h1>
             <button class="button">
                 READ MORE
+            </button>
+            <button class="button mt-10 push-notifications" onclick="subscribeForPushNotifications()">
+                SUBSCRIBE FOR PUSH NOTIFICATIONS
             </button>
         </div>
     </div>
@@ -164,5 +168,6 @@
             <p class="text-sm text-[#B9B9B9]">AGRIDERA SEEDS & AGRICULTURE LTD. © 2020</p>
         </div>
     </footer>
+    <script src="../sw.js"></script>
 </body>
 </html>
